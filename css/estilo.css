@@ -200,7 +200,7 @@
 .grid__layout {
     display: grid;
     width: 1091px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat(30px 250px 30px 250px 30px 250px);
     grid-column-gap: 15px;
     grid-row-gap: 10px;
@@ -414,6 +414,15 @@
     height: 300px;
     object-fit: cover;
 }
+
+/*RESPONSIVE 1090 GRID LAYOUT -----------------------------------*/
+@media screen and ( max-width : 1090px ) {
+    .grid__layout {
+        
+    }
+    
+}
+
 
 /* RESPONSIVE 800PX ---------------------------- */
 
