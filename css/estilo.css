@@ -199,7 +199,7 @@
 
 .grid__layout {
     display: grid;
-    width: 1091px;
+    width: 100%;
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat(30px 250px 30px 250px 30px 250px);
     grid-column-gap: 15px;
@@ -418,10 +418,50 @@
 /*RESPONSIVE 1090 GRID LAYOUT -----------------------------------*/
 @media screen and ( max-width : 1090px ) {
     .grid__layout {
-        
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat (2, 1fr);
     }
-    
+    .c4 {
+        grid-column: 1/1;
+    }
+
+    .c8 {
+        grid-column: 1/1;
+    }
+
+    .c12 {
+        grid-column: 1/1;
+    }
+
+
 }
+
+/* RESPONSIVE 716 GRID LAYOUT ---------------------- */
+
+@media screen and ( max-width : 716px ) {
+    .grid__layout {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat (1, 1fr);
+    }
+    .c3 {
+        grid-column: 1/1;
+    }
+
+    .c7 {
+        grid-column: 1/1;
+    }
+
+    .c11 {
+        grid-column: 1/1;
+    }
+
+}
+
+
+
+
 
 
 /* RESPONSIVE 800PX ---------------------------- */
@@ -579,6 +619,17 @@
 }
 
 @media only screen and ( max-width : 390px ) {
+
+    .grid__layout {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat (1, 1fr);
+    }
+
+    .header__text {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
 
     .section__text {
         width: 320px;
